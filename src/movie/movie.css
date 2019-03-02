@@ -1,0 +1,53 @@
+.moviePage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.movieDetails {
+  order: 1;
+}
+
+.sectionTitle {
+  margin: 0;
+}
+
+.detailsList {
+  margin-top: 20px;
+}
+
+.detailsList li {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.poster {
+  order: 2;
+}
+
+.posterImg {
+  width: 100%;
+  height: auto;
+}
+
+@media(min-width: 768px) {
+  .moviePage {
+    flex-direction: row;
+  }
+  .movieDetails {
+    flex: 2;
+    order: 2;
+  }
+  .poster {
+    flex: 1;
+    order: 1;
+    padding-right: 20px;
+  }
+  .posterImg {
+    width: 300px;
+    height: auto;
+  }
+}
